@@ -12,7 +12,7 @@ export default function Login() {
   const handleLogin = async () => {
     try {
       await signIn(email, password);
-      router.push('/(tabs)');
+      router.push('/select-language');
     } catch (error) {
       console.error(error);
     }
